@@ -1,0 +1,23 @@
+- name: Install openssh-client
+  sudo: yes
+  apt: pkg=openssh-client state=latest
+
+- name: Install openssh-server
+  sudo: yes
+  apt: pkg=openssh-server state=latest
+
+- name: Replace sshd config
+  sudo: yes
+  template: src=sshd_config.j2 dest=/etc/ssh/sshd_config owner=root group=root mode=0644
+
+- name: Restart sshd
+  sudo: yes
+  service: name=ssh state=restarted
+
+- name: Enable sshd service
+  sudo: yes
+  service: name=ssh state=started enabled=yes
+
+- name: Copy global SSH client config
+  sudo: yes
+  copy: src=ssh_config dest=/etc/ssh/ssh_config owner=root group=root mode=0644

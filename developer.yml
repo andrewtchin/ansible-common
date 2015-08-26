@@ -1,0 +1,17 @@
+---
+- name: Configure developer instance.
+  hosts: '{{ target_hosts }}'
+  connection: ssh
+  remote_user: '{{ deploy_username }}'
+  roles:
+    - user
+    - common
+    - developer-tools
+    - python-packages
+
+- name: Deploy cleanup.
+  hosts: '{{ target_hosts }}'
+  connection: ssh
+  remote_user: '{{ deploy_username }}'
+  roles:
+    - deploy-cleanup

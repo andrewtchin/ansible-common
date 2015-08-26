@@ -1,0 +1,15 @@
+- name: Update pip via easy_install
+  sudo: yes
+  shell: easy_install --upgrade pip
+
+- name: Install python packages
+  pip: name={{ item }} state=latest
+  sudo: yes
+  with_items:
+    - awscli
+    - boto
+    - flake8
+    - pylint
+    - ipdb
+    - ipython
+    - virtualenv

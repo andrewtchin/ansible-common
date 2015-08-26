@@ -1,0 +1,79 @@
+# See the sshd_config(5) manpage for details
+# Mozilla SSH guidelines https://wiki.mozilla.org/Security/Guidelines/OpenSSH#Modern_.28OpenSSH_6.7.2B.29
+
+Port {{ ssh.port }}
+
+# Use these options to restrict which interfaces/protocols sshd will bind to
+#ListenAddress ::
+#ListenAddress 0.0.0.0
+
+#DenyUsers *
+#AllowUsers
+#DenyGroups *
+#AllowGroups admin
+
+Protocol 2
+# HostKeys for protocol version 2
+HostKey /etc/ssh/ssh_host_ed25519_key
+HostKey /etc/ssh/ssh_host_rsa_key
+HostKey /etc/ssh/ssh_host_ecdsa_key
+
+# Prevent user setting environment options
+PermitUserEnvironment no
+
+# Privilege Separation is turned on for security
+UsePrivilegeSeparation sandbox
+
+# Logging
+SyslogFacility AUTH
+LogLevel VERBOSE
+
+# Authentication
+LoginGraceTime 30
+MaxAuthTries 10
+PasswordAuthentication no
+PermitEmptyPasswords no
+PermitRootLogin no
+StrictModes yes
+
+AuthenticationMethods publickey
+#AuthorizedKeysFile	%h/.ssh/authorized_keys
+
+# Change to yes to enable challenge-response passwords (beware issues with
+# some PAM modules and threads)
+ChallengeResponseAuthentication no
+
+# Idle timeout
+ClientAliveInterval 600
+ClientAliveCountMax 3
+TCPKeepAlive no
+
+X11Forwarding yes
+X11DisplayOffset 10
+PrintMotd no
+PrintLastLog yes
+
+Subsystem sftp /usr/lib/openssh/sftp-server
+
+# Set this to 'yes' to enable PAM authentication, account processing,
+# and session processing. If this is enabled, PAM authentication will
+# be allowed through the ChallengeResponseAuthentication and
+# PasswordAuthentication.  Depending on your PAM configuration,
+# PAM authentication via ChallengeResponseAuthentication may bypass
+# the setting of "PermitRootLogin without-password".
+# If you just want the PAM account and session checks to run without
+# PAM authentication, then enable this but set PasswordAuthentication
+# and ChallengeResponseAuthentication to 'no'.
+UsePAM yes
+
+# Disable reverse DNS lookup to make SSH start faster
+UseDNS no
+
+# https://wiki.mozilla.org/Security/Guidelines/OpenSSH#Modern_.28OpenSSH_6.7.2B.29
+Ciphers chacha20-poly1305@openssh.com,aes256-ctr
+KexAlgorithms curve25519-sha256@libssh.org,ecdh-sha2-nistp521,ecdh-sha2-nistp384,ecdh-sha2-nistp256,diffie-hellman-group-exchange-sha256
+MACs hmac-sha2-512-etm@openssh.com,hmac-sha2-256-etm@openssh.com,umac-128-etm@openssh.com,hmac-sha2-512,hmac-sha2-256,umac-128@openssh.com
+
+# Compatibility config https://github.com/ioerror/duraconf
+# Ciphers aes256-ctr
+# MACs hmac-sha2-512
