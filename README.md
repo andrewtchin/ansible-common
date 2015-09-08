@@ -1,7 +1,12 @@
 # ansible-common
 
-## Roles
+## Install
+Installs python packages, SSH configuration, and dotfiles.
 
-### ssh
+* ansible-playbook -vvv playbooks/ansible-common.yml --ask-sudo-pass
 
-### python-packages
+For local install
+* ansible-playbook -vvv playbooks/ansible-common.yml --ask-sudo-pass -c local
+
+## OS Specific
+Follow with OS specific playbook.

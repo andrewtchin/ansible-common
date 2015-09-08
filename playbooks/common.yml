@@ -1,9 +1,9 @@
 ---
 - name: Configure common roles.
-  hosts: '{{ target_hosts }}'
-  connection: ssh
-  remote_user: '{{ deploy_username }}'
+  hosts: localhost
+  connection: local
   roles:
+    - common
     - python-packages
     - ssh
 
