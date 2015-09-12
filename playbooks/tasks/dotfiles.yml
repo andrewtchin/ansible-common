@@ -7,5 +7,13 @@
     force=yes
     accept_hostkey=True
 
+- name: Clone dotfiles local.
+  git: >
+    repo={{ rcm_dotfiles_local_repo }}
+    dest=~/.dotfiles-local
+    update=yes
+    force=yes
+    accept_hostkey=True
+
 - name: Install dotfiles.
   command: rcup -K
