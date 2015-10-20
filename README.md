@@ -5,7 +5,8 @@
 ### OS X
 * curl -Lo /tmp/ansible-common-master.zip https://github.com/andrewtchin/ansible-common/archive/master.zip
 * unzip /tmp/ansible-common-master -d /tmp
-* sudo /tmp/ansible-common-mater/osx-bootstrap.sh
+* chmod +x /tmp/ansible-common-master/osx-bootstrap.sh
+* sudo /tmp/ansible-common-master/osx-bootstrap.sh
 
 ## Install
 Installs python packages, SSH configuration, and dotfiles.
