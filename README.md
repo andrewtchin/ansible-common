@@ -11,10 +11,10 @@
 ## Install
 Installs python packages.
 
-* ansible-playbook -vvv playbooks/ansible-common.yml --ask-sudo-pass
+* ansible-playbook -vvv playbooks/common.yml --ask-sudo-pass
 
 For local install
-* ansible-playbook -vvv playbooks/ansible-common.yml --ask-sudo-pass -c local
+* ansible-playbook -vvv playbooks/common.yml --ask-sudo-pass -c local
 
 ## OS Specific
 Follow with OS specific playbook.
