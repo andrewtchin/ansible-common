@@ -1,5 +1,10 @@
 # ansible-common
 
+## Bootstrap
+
+### OS X
+* sudo ./osx-bootstrap.sh
+
 ## Install
 Installs python packages, SSH configuration, and dotfiles.
 
