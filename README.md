@@ -11,9 +11,7 @@
 ## Install
 Installs python packages.
 
-* ansible-playbook -vvv playbooks/common.yml --ask-sudo-pass
-
-For local install
+* git clone https://github.com/andrewtchin/ansible-common.git
 * ansible-playbook -vvv playbooks/common.yml --ask-sudo-pass -i inventory
 
 ## OS Specific
