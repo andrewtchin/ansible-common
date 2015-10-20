@@ -3,8 +3,4 @@
   hosts: localhost
   connection: local
   roles:
-    - common
     - python-packages
-
-  tasks:
-    - include tasks/dotfiles.yml

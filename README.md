@@ -9,7 +9,7 @@
 * sudo /tmp/ansible-common-master/osx-bootstrap.sh
 
 ## Install
-Installs python packages, SSH configuration, and dotfiles.
+Installs python packages.
 
 * ansible-playbook -vvv playbooks/ansible-common.yml --ask-sudo-pass
 
