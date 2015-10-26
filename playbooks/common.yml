@@ -1,6 +1,5 @@
 ---
 - name: Configure common roles.
-  hosts: localhost
-  connection: local
+  hosts: all
   roles:
     - python-packages
