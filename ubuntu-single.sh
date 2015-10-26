@@ -7,9 +7,9 @@ git clone https://github.com/andrewtchin/ansible-ubuntu.git
 
 cd ansible-common
 echo "Run ansible-common"
-ansible-playbook -vvv playbooks/common.yml --ask-sudo-pass -i inventory
+ansible-playbook -vvv playbooks/common.yml --ask-sudo-pass -c local
 
 cd ../ansible-ubuntu
 echo "Run ansible-ubuntu"
-ansible-playbook -vvv playbooks/ubuntu.yml --ask-sudo-pass --extra-vars=@vars/deploy_vars.json
+ansible-playbook -vvv playbooks/ubuntu.yml --ask-sudo-pass -c local --extra-vars=@vars/deploy_vars.json
 echo "Install dotfiles"
