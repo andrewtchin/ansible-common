@@ -1,5 +1,5 @@
 echo "Bootstrap Ansible"
-curl -L https://raw.githubusercontent.com/andrewtchin/ansible-common/master/ubuntu-bootstrap.sh | s://raw.githubusercontent.com/andrewtchin/ansible-common/master/ubuntu-bootstrap.sh | sh
+curl -L https://raw.githubusercontent.com/andrewtchin/ansible-common/master/ubuntu-bootstrap.sh | sh
 echo "Clone ansible-common"
 git clone https://github.com/andrewtchin/ansible-common.git
 echo "Clone ansible-ubuntu"
