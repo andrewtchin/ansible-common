@@ -13,3 +13,6 @@ cd ../ansible-ubuntu
 echo "Run ansible-ubuntu"
 ansible-playbook -vvv playbooks/ubuntu.yml --ask-sudo-pass -c local --extra-vars=@vars/ubuntu.json
 echo "Install dotfiles"
+git clone https://github.com/andrewtchin/dotfiles-local.git ~/.dotfiles-local
+git clone https://github.com/andrewtchin/dotfiles.git ~/.dotfiles --recursive
+RCRC="$HOME/.dotfiles/rcrc" rcup
