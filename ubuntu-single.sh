@@ -11,5 +11,5 @@ ansible-playbook -vvv playbooks/common.yml --ask-sudo-pass -c local
 
 cd ../ansible-ubuntu
 echo "Run ansible-ubuntu"
-ansible-playbook -vvv playbooks/ubuntu.yml --ask-sudo-pass -c local --extra-vars=@vars/deploy_vars.json
+ansible-playbook -vvv playbooks/ubuntu.yml --ask-sudo-pass -c local --extra-vars=@vars/ubuntu.json
 echo "Install dotfiles"
