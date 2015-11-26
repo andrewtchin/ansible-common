@@ -10,6 +10,12 @@ Installs python packages.
 curl -L https://raw.githubusercontent.com/andrewtchin/ansible-common/master/ubuntu-single.sh | sh
 ```
 
+#### OS X
+
+```
+curl -L https://raw.githubusercontent.com/andrewtchin/ansible-common/master/osx-single.sh | sh
+```
+
 ## Normal install
 
 ### Bootstrap
