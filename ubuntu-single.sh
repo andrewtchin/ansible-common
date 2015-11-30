@@ -1,5 +1,3 @@
-cd ~/
-
 echo "Bootstrap Ansible"
 curl -L https://raw.githubusercontent.com/andrewtchin/ansible-common/master/ubuntu-bootstrap.sh | sh
 
