@@ -14,6 +14,9 @@ echo "Run ansible-osx"
 ansible-playbook -vvv playbooks/osx-preinstall.yml --ask-sudo-pass --extra-vars=@vars/osx.yml
 ansible-playbook -vvv playbooks/osx.yml --ask-sudo-pass --extra-vars=@vars/osx.yml
 
+echo "Change shell"
+chsh -s $(which zsh)
+
 echo "Install dotfiles"
 git clone https://github.com/andrewtchin/dotfiles-local.git ~/.dotfiles-local
 git clone https://github.com/andrewtchin/dotfiles.git ~/.dotfiles --recursive
