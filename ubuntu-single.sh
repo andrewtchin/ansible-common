@@ -1,15 +1,17 @@
+cd $HOME
+
 echo "Bootstrap Ansible"
 curl -L https://raw.githubusercontent.com/andrewtchin/ansible-common/master/ubuntu-bootstrap.sh | sh
 
 echo "Clone ansible-common"
-ANSIBLE_COMMON_DIR="~/ansible-common"
+ANSIBLE_COMMON_DIR="$HOME/ansible-common"
 if [ -d "$ANSIBLE_COMMON_DIR" ]; then
   rm -rf $ANSIBLE_COMMON_DIR
 fi
 git clone https://github.com/andrewtchin/ansible-common.git $ANSIBLE_COMMON_DIR
 
 echo "Clone ansible-ubuntu"
-ANSIBLE_UBUNTU_DIR="~/ansible-ubuntu"
+ANSIBLE_UBUNTU_DIR="$HOME/ansible-ubuntu"
 if [ -d "$ANSIBLE_UBUNTU_DIR" ]; then
   rm -rf $ANSIBLE_UBUNTU_DIR
 fi
