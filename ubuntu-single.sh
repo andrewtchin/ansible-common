@@ -15,11 +15,11 @@ if [ -d "$ANSIBLE_UBUNTU_DIR" ]; then
 fi
 git clone https://github.com/andrewtchin/ansible-ubuntu.git $ANSIBLE_UBUNTU_DIR
 
-cd ansible-common
+cd $ANSIBLE_COMMON_DIR
 echo "Run ansible-common"
 ansible-playbook -vvv playbooks/common.yml --ask-sudo-pass -c local
 
-cd ../ansible-ubuntu
+cd $ANSIBLE_UBUNTU_DIR
 echo "Run ansible-ubuntu"
 ansible-playbook -vvv playbooks/ubuntu.yml --ask-sudo-pass -c local --extra-vars=@vars/ubuntu.json
 
