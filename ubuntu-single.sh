@@ -14,7 +14,7 @@ echo "Run ansible-ubuntu"
 ansible-playbook -vvv playbooks/ubuntu.yml --ask-sudo-pass -c local --extra-vars=@vars/ubuntu.json
 
 echo "Change shell"
-chsh -s $(which zsh)
+sudo chsh -s $(which zsh)
 
 echo "Install dotfiles"
 git clone https://github.com/andrewtchin/dotfiles-local.git ~/.dotfiles-local
