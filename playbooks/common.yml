@@ -1,6 +1,8 @@
 ---
 - name: Configure common roles.
   hosts: all
+  gather_facts: yes
+
   roles:
     - python-packages
     - vim
