@@ -18,7 +18,4 @@ git clone https://github.com/andrewtchin/dotfiles-local.git ~/.dotfiles-local
 git clone https://github.com/andrewtchin/dotfiles.git ~/.dotfiles --recursive
 RCRC="$HOME/.dotfiles/rcrc" rcup
 
-echo "Change shell"
-chsh -s $(which zsh)
-
 echo "Install complete"
