@@ -16,6 +16,11 @@ curl -L https://raw.githubusercontent.com/andrewtchin/ansible-common/master/ubun
 curl -L https://raw.githubusercontent.com/andrewtchin/ansible-common/master/osx-single.sh | sh
 ```
 
+Without installing Xcode (Assumes already installed):
+```
+curl -L https://raw.githubusercontent.com/andrewtchin/ansible-common/master/osx-single-skip-xcode.sh | sh
+```
+
 ## Normal install
 
 ### Bootstrap
