@@ -9,7 +9,7 @@
 - debug: var=el_capitan
 
 - name: Install python packages for El Capitan
-  pip: name={{ item }} state=latest extra_args="-ignore-installed six"
+  pip: name={{ item }} state=latest extra_args="--ignore-installed six"
   sudo: yes
   with_items:
     - awscli
