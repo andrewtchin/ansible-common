@@ -35,7 +35,7 @@ rm -f $HOME/.gnupg/gpg.conf
 echo "Install dotfiles"
 git clone https://github.com/andrewtchin/dotfiles-local.git ~/.dotfiles-local
 git clone https://github.com/andrewtchin/dotfiles.git ~/.dotfiles --recursive
-RCRC="$HOME/.dotfiles/rcrc" rcup
+RCRC="$HOME/.dotfiles/rcrc" rcup || :
 
 echo "Set defaults"
 ansible-playbook -vvv playbooks/osx-defaults.yml --ask-sudo-pass --extra-vars=@vars/osx.yml
