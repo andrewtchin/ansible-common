@@ -42,7 +42,7 @@ if [ -d "$DOTFILES_DIR" ]; then
   rm -rf $DOTFILES_DIR
 fi
 git clone https://github.com/andrewtchin/dotfiles.git $DOTFILES_DIR --recursive
-RCRC="$DOTFILES_DIR/rcrc" rcup || echo "Installed dotfiles maybe"
+(RCRC="$DOTFILES_DIR/rcrc" rcup) || echo "Failed to install dotfiles"
 
 echo "Set defaults"
 ansible-playbook -vvv playbooks/osx-defaults.yml --ask-sudo-pass --extra-vars=@vars/osx.yml
