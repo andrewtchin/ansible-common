@@ -7,8 +7,12 @@
   register: osx_version
   when: ansible_distribution == "MacOSX"
 
+- debug: var=osx_version
+
 - set_fact: el_capitan=true
   when: osx_version == "10.11.1"
+
+- debug: var=el_capitan
 
 - name: Install python packages for El Capitan
   pip: name={{ item }} state=latest extra_args=-ignore-installed six
