@@ -7,8 +7,7 @@
   register: osx_version
   when: ansible_distribution == "MacOSX"
 
-- set_fact:
-  el_capitan: true
+- set_fact: el_capitan=true
   when: osx_version == "10.11.1"
 
 - name: Install python packages for El Capitan
