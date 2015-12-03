@@ -30,9 +30,19 @@ echo "Remove gpg.conf for dotfiles"
 rm -f $HOME/.gnupg/gpg.conf
 
 echo "Install dotfiles"
-git clone https://github.com/andrewtchin/dotfiles-local.git ~/.dotfiles-local
-git clone https://github.com/andrewtchin/dotfiles.git ~/.dotfiles --recursive
-RCRC="$HOME/.dotfiles/rcrc" rcup || :
+DOTFILES_LOCAL_DIR="$HOME/.dotfiles-local"
+if [ -d "$DOTFILES_LOCAL_DIR" ]; then
+  rm -rf $DOTFILES_LOCAL_DIR
+fi
+git clone https://github.com/andrewtchin/dotfiles-local.git $DOTFILES_LOCAL_DIR
+
+
+DOTFILES_DIR="$HOME/.dotfiles"
+if [ -d "$DOTFILES_DIR" ]; then
+  rm -rf $DOTFILES_DIR
+fi
+git clone https://github.com/andrewtchin/dotfiles.git $DOTFILES_DIR --recursive
+RCRC="$DOTFILES_DIR/rcrc" rcup || :
 
 echo "Set defaults"
 ansible-playbook -vvv playbooks/osx-defaults.yml --ask-sudo-pass --extra-vars=@vars/osx.yml
