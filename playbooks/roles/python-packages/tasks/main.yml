@@ -2,14 +2,38 @@
   sudo: yes
   shell: easy_install --upgrade pip
 
+- name: Get OSX version
+  command: 'sw_vers -productVersion'
+  register: osx_version
+  when: ansible_distribution == "MacOSX"
+
+- set_fact:
+  el_capitan: true
+  when: osx_version == "10.11.1"
+
+- name: Install python packages for El Capitan
+  pip: name={{ item }} state=latest extra_args=-ignore-installed six
+  sudo: yes
+  with_items:
+    - awscli
+    - pylint
+    - ipdb
+  when: el_capitan
+
 - name: Install python packages
   pip: name={{ item }} state=latest
   sudo: yes
   with_items:
     - awscli
-    - boto
-    - flake8
     - pylint
     - ipdb
+  when: not el_capitan
+
+- name: Install python packages
+  pip: name={{ item }} state=latest
+  sudo: yes
+  with_items:
+    - boto
+    - flake8
     - ipython
     - virtualenv
