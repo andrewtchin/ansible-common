@@ -14,7 +14,6 @@
   with_items:
     - awscli
     - pylint
-    - ipdb
   when: el_capitan is defined and el_capitan == true
 
 - name: Install python packages
