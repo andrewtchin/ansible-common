@@ -2,15 +2,9 @@
   sudo: yes
   shell: easy_install --upgrade pip
 
-- name: Get OSX version
-  command: 'sw_vers -productVersion'
-  register: osx_version
-  when: ansible_distribution == "MacOSX"
-
-- debug: var=osx_version
-
-- set_fact: el_capitan=true
-  when: osx_version == "10.11.1"
+- set_fact:
+    el_capitan: true
+  when: ansible_distribution == "MacOSX" and ansible_distribution_version == "10.11.1"
 
 - debug: var=el_capitan
 
@@ -21,7 +15,7 @@
     - awscli
     - pylint
     - ipdb
-  when: el_capitan is defined
+  when: el_capitan is defined and el_capitan == true
 
 - name: Install python packages
   pip: name={{ item }} state=latest
