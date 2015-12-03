@@ -37,8 +37,6 @@ git clone https://github.com/andrewtchin/dotfiles-local.git ~/.dotfiles-local
 git clone https://github.com/andrewtchin/dotfiles.git ~/.dotfiles --recursive
 RCRC="$HOME/.dotfiles/rcrc" rcup
 
-read  -p "Press any key to set defaults:" -n 1
-
 echo "Set defaults"
 ansible-playbook -vvv playbooks/osx-defaults.yml --ask-sudo-pass --extra-vars=@vars/osx.yml
 
