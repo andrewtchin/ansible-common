@@ -21,6 +21,11 @@ Without installing Xcode (Assumes already installed):
 curl -L https://raw.githubusercontent.com/andrewtchin/ansible-common/master/osx-single-skip-xcode.sh | sh
 ```
 
+Then set OS X defaults:
+```
+ansible-playbook -vvv ~/ansible-osx/playbooks/osx-defaults.yml --ask-sudo-pass --extra-vars=@~/ansible-osx/vars/osx.yml
+```
+
 ## Normal install
 
 ### Bootstrap
