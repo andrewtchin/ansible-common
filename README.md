@@ -4,6 +4,8 @@ Installs python packages.
 
 ## Single touch install
 
+Runs bootstrap, common, and OS specific playbooks. Installs dotfiles.
+
 #### Ubuntu
 
 ```
@@ -30,16 +32,16 @@ cd ~/ansible-osx; ansible-playbook -vvv playbooks/osx-defaults.yml --ask-sudo-pa
 
 ### Bootstrap
 
-#### OS X
-
-```
-curl -L https://raw.githubusercontent.com/andrewtchin/ansible-common/master/osx-bootstrap.sh | sh
-```
-
 #### Ubuntu
 
 ```
 curl -L https://raw.githubusercontent.com/andrewtchin/ansible-common/master/ubuntu-bootstrap.sh | sh
+```
+
+#### OS X
+
+```
+curl -L https://raw.githubusercontent.com/andrewtchin/ansible-common/master/osx-bootstrap.sh | sh
 ```
 
 ### Run playbook
@@ -50,4 +52,7 @@ ansible-playbook -vvv playbooks/common.yml --ask-sudo-pass -i inventory
 ```
 
 ### OS Specific Customizations
+
 Follow with OS specific playbook.
+* https://github.com/andrewtchin/ansible-ubuntu
+* https://github.com/andrewtchin/ansible-osx
