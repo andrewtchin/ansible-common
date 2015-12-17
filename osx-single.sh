@@ -3,7 +3,7 @@ cd $HOME
 echo "Install Xcode"
 curl -L https://raw.githubusercontent.com/andrewtchin/ansible-common/master/osx-bootstrap-xcode.sh | sh
 
-echo "Install Ansible"
+echo "Bootstrap"
 curl -L https://raw.githubusercontent.com/andrewtchin/ansible-common/master/osx-bootstrap.sh | sh
 
 echo "Clone ansible-common"
