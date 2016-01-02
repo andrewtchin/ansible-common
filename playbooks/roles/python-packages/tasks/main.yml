@@ -29,5 +29,6 @@
   with_items:
     - boto
     - flake8
+    - markupsafe
     - ipython
     - virtualenv
