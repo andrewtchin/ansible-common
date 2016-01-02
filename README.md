@@ -8,8 +8,14 @@ Runs bootstrap, common, and OS specific playbooks. Installs dotfiles.
 
 #### Ubuntu
 
+Desktop
 ```
-curl -L https://raw.githubusercontent.com/andrewtchin/ansible-common/master/ubuntu-single.sh | sh
+curl -L https://raw.githubusercontent.com/andrewtchin/ansible-common/master/ubuntu-desktop.sh | sh
+```
+
+Server
+```
+curl -L https://raw.githubusercontent.com/andrewtchin/ansible-common/master/ubuntu-server.sh | sh
 ```
 
 #### OS X
