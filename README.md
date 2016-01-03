@@ -14,6 +14,7 @@ curl -L https://raw.githubusercontent.com/andrewtchin/ansible-common/master/ubun
 ```
 
 Server
+Verified on Ubuntu Server 14.04.3 and Ubuntu Server 15.10 (2016-01-02)
 ```
 curl -L https://raw.githubusercontent.com/andrewtchin/ansible-common/master/ubuntu-server.sh | sh
 ```
