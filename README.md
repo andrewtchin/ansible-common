@@ -8,12 +8,15 @@ Runs bootstrap, common, and OS specific playbooks. Installs dotfiles.
 
 #### Ubuntu
 
-Desktop
+##### Desktop
+
+Verified on Ubuntu Desktop 14.04.3 and Ubuntu Desktop 15.10 (2016-01-02)
 ```
 curl -L https://raw.githubusercontent.com/andrewtchin/ansible-common/master/ubuntu-desktop.sh | sh
 ```
 
-Server
+##### Server
+
 Verified on Ubuntu Server 14.04.3 and Ubuntu Server 15.10 (2016-01-02)
 ```
 curl -L https://raw.githubusercontent.com/andrewtchin/ansible-common/master/ubuntu-server.sh | sh
