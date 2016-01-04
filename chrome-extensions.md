@@ -7,9 +7,6 @@ https://chrome.google.com/webstore/detail/jeoacafpbcihiomhlakheieifhpjdfeo
 HTTPS Everywhere
 https://chrome.google.com/webstore/detail/gcbommkclmclpchllfjekcdonpmejbdp
 
-Lastpass
-https://chrome.google.com/webstore/detail/hdokiejnpimakedhajhdlcegeplioahd
-
 Referer Control
 https://chrome.google.com/webstore/detail/hnkcfpcejkafcihlgbojoidoihckciin
 
