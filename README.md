@@ -6,6 +6,8 @@ Installs python packages.
 
 Runs bootstrap, common, and OS specific playbooks. Installs dotfiles.
 
+WARNING: This installs an authorized_keys file from dotfiles. Replace dotfiles with your own.
+
 #### Ubuntu
 
 ##### Desktop
