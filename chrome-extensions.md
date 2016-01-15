@@ -1,9 +1,6 @@
 1Password
 https://chrome.google.com/webstore/detail/aomjjhallfgjeglblehebfpbcfeobpgk
 
-Disconnect
-https://chrome.google.com/webstore/detail/jeoacafpbcihiomhlakheieifhpjdfeo
-
 HTTPS Everywhere
 https://chrome.google.com/webstore/detail/gcbommkclmclpchllfjekcdonpmejbdp
 
