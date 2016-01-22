@@ -29,15 +29,10 @@ echo "Run ansible-ubuntu"
 ansible-playbook -vvv playbooks/ubuntu-desktop.yml --ask-sudo-pass -c local --extra-vars=@vars/ubuntu.json
 
 echo "Install dotfiles"
-DOTFILES_LOCAL_DIR="$HOME/.dotfiles-local"
-if [ -d "$DOTFILES_LOCAL_DIR"  ]; then
-      rm -rf $DOTFILES_LOCAL_DIR
-fi
 DOTFILES_DIR="$HOME/.dotfiles"
 if [ -d "$DOTFILES_DIR"  ]; then
       rm -rf $DOTFILES_DIR
 fi
-git clone https://github.com/andrewtchin/dotfiles-local.git $DOTFILES_LOCAL_DIR
 git clone https://github.com/andrewtchin/dotfiles.git $DOTFILES_DIR --recursive
 RCRC="$HOME/.dotfiles/rcrc" rcup
 

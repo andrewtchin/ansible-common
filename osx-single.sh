@@ -33,12 +33,6 @@ echo "Remove gpg.conf for dotfiles"
 rm -f $HOME/.gnupg/gpg.conf
 
 echo "Install dotfiles"
-DOTFILES_LOCAL_DIR="$HOME/.dotfiles-local"
-if [ -d "$DOTFILES_LOCAL_DIR" ]; then
-  rm -rf $DOTFILES_LOCAL_DIR
-fi
-git clone https://github.com/andrewtchin/dotfiles-local.git $DOTFILES_LOCAL_DIR
-
 DOTFILES_DIR="$HOME/.dotfiles"
 if [ -d "$DOTFILES_DIR" ]; then
   rm -rf $DOTFILES_DIR
