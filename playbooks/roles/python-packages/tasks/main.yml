@@ -1,5 +1,5 @@
 - name: Update pip via easy_install
-  sudo: yes
+  become: yes
   shell: easy_install --upgrade pip
 
 - set_fact:
@@ -8,7 +8,7 @@
 
 - name: Install python packages for El Capitan
   pip: name={{ item }} state=latest extra_args="--ignore-installed six"
-  sudo: yes
+  become: yes
   with_items:
     - awscli
     - pylint
@@ -16,7 +16,7 @@
 
 - name: Install python packages
   pip: name={{ item }} state=latest
-  sudo: yes
+  become: yes
   with_items:
     - awscli
     - pylint
@@ -25,7 +25,7 @@
 
 - name: Install python packages
   pip: name={{ item }} state=latest
-  sudo: yes
+  become: yes
   with_items:
     - boto
     - flake8
