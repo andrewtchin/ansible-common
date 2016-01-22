@@ -2,17 +2,13 @@
   become: yes
   shell: easy_install --upgrade pip
 
-- set_fact:
-    el_capitan: true
-  when: ansible_distribution == "MacOSX" and ansible_distribution_version == "10.11.1"
-
 - name: Install python packages for El Capitan
   pip: name={{ item }} state=latest extra_args="--ignore-installed six"
   become: yes
   with_items:
     - awscli
     - pylint
-  when: el_capitan is defined and el_capitan == true
+  when: is_el_capitan
 
 - name: Install python packages
   pip: name={{ item }} state=latest
@@ -21,7 +17,7 @@
     - awscli
     - pylint
     - ipdb
-  when: el_capitan is undefined
+  when: not is_el_capitan
 
 - name: Install python packages
   pip: name={{ item }} state=latest
