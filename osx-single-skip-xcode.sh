@@ -19,12 +19,12 @@ git clone https://github.com/andrewtchin/ansible-osx.git $ANSIBLE_OSX_DIR
 
 cd $ANSIBLE_COMMON_DIR
 echo "Run ansible-common"
-ansible-playbook -vvv playbooks/common.yml --ask-sudo-pass -c local
+ansible-playbook -vvv playbooks/common.yml --ask-become-pass -c local
 
 cd $ANSIBLE_OSX_DIR
 echo "Run ansible-osx"
-ansible-playbook -vvv playbooks/osx-preinstall.yml --ask-sudo-pass --extra-vars=@vars/osx.yml
-ansible-playbook -vvv playbooks/osx.yml --ask-sudo-pass --extra-vars=@vars/osx.yml
+ansible-playbook -vvv playbooks/osx-preinstall.yml --ask-become-pass --extra-vars=@vars/osx.yml
+ansible-playbook -vvv playbooks/osx.yml --ask-become-pass --extra-vars=@vars/osx.yml
 
 echo "Remove gpg.conf for dotfiles"
 rm -f $HOME/.gnupg/gpg.conf
