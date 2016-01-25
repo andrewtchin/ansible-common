@@ -14,14 +14,14 @@ WARNING: This installs an authorized_keys file from dotfiles. Replace dotfiles w
 
 Verified on Ubuntu Desktop 14.04.3 and Ubuntu Desktop 15.10 (2016-01-02)
 ```
-curl -L https://raw.githubusercontent.com/andrewtchin/ansible-common/master/ubuntu-desktop.sh | sh
+curl -L https://raw.githubusercontent.com/andrewtchin/ansible-common/master/ubuntu-desktop.sh | bash
 ```
 
 ##### Server
 
 Verified on Ubuntu Server 14.04.3 and Ubuntu Server 15.10 (2016-01-02)
 ```
-curl -L https://raw.githubusercontent.com/andrewtchin/ansible-common/master/ubuntu-server.sh | sh
+curl -L https://raw.githubusercontent.com/andrewtchin/ansible-common/master/ubuntu-server.sh | bash
 ```
 
 #### OS X
