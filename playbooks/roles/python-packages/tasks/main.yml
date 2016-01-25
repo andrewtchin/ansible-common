@@ -18,7 +18,7 @@
   when: is_el_capitan
   ignore_errors: true
 
-  - name: Install python packages
+- name: Install python packages
   pip: name={{ item }} state=latest
   become: yes
   with_items:
