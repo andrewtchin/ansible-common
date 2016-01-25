@@ -3,6 +3,12 @@ cd $HOME
 echo "Bootstrap"
 curl -L https://raw.githubusercontent.com/andrewtchin/ansible-common/master/osx-bootstrap.sh | sh
 
+echo "Install devel Ansible"
+sudo easy_install pip
+sudo pip install paramiko PyYAML Jinja2 httplib2 six
+git clone git://github.com/ansible/ansible.git --recursive
+source ansible/hacking/env-setup
+
 echo "Clone ansible-common"
 ANSIBLE_COMMON_DIR="$HOME/ansible-common"
 if [ -d "$ANSIBLE_COMMON_DIR" ]; then
