@@ -10,13 +10,22 @@
     - pylint
   when: is_el_capitan
 
-- name: Install python packages
+- name: Install python packages for El Capitan
+  pip: name={{ item }} state=latest
+  become: yes
+  with_items:
+    - ipython
+  when: is_el_capitan
+  ignore_errors: true
+
+  - name: Install python packages
   pip: name={{ item }} state=latest
   become: yes
   with_items:
     - awscli
     - pylint
     - ipdb
+    - ipython
   when: not is_el_capitan
 
 - name: Install python packages
@@ -25,5 +34,4 @@
   with_items:
     - boto
     - flake8
-    - ipython
     - virtualenv
