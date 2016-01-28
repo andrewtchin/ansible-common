@@ -18,3 +18,6 @@ https://chrome.google.com/webstore/detail/pkehgijcmpdhfbdbbnkijodmdjhbjlgp
 
 Postman
 https://chrome.google.com/webstore/detail/fhbjgbiflinjbdggehcddcbncdddomop
+
+Tab Cookies
+https://chrome.google.com/webstore/detail/iahecghojagkcoehfhfknajofkokndjm

@@ -15,3 +15,9 @@ https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/
 
 Privacy Badger
 https://addons.mozilla.org/en-US/firefox/addon/privacy-badger-firefox/
+
+Random Agent Spoofer
+https://addons.mozilla.org/en-US/firefox/addon/random-agent-spoofer/
+
+Self Destructing Cookies
+https://addons.mozilla.org/en-us/firefox/addon/self-destructing-cookies/
