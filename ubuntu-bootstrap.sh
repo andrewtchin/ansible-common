@@ -4,9 +4,12 @@ sudo apt-get upgrade -y python
 echo "Install python-dev"
 sudo apt-get install -y python-dev
 
+echo "Install Ansible dependencies"
+sudo apt-get install -y python-pip
+sudo pip install markupsafe
+
 # Removed in favor of using devel
 # echo "Installing Ansible."
-# sudo apt-get install -y python-pip
 # sudo pip install ansible markupsafe
 
 echo "Installing git."
