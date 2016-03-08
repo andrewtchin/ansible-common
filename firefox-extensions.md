@@ -1,9 +1,6 @@
 1Password
 https://agilebits.com/onepassword/extensions
 
-Disconnect
-https://addons.mozilla.org/en-US/firefox/addon/disconnect/
-
 HTTPS Everywhere
 https://addons.mozilla.org/en-US/firefox/addon/https-everywhere/
 
@@ -21,3 +18,9 @@ https://addons.mozilla.org/en-US/firefox/addon/random-agent-spoofer/
 
 Self Destructing Cookies
 https://addons.mozilla.org/en-us/firefox/addon/self-destructing-cookies/
+
+Disconnect
+https://addons.mozilla.org/en-US/firefox/addon/disconnect/
+
+TrackMeNot
+https://addons.mozilla.org/en-US/firefox/addon/trackmenot/
