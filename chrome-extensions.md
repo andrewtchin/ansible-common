@@ -27,3 +27,6 @@ https://chrome.google.com/webstore/detail/cgllkjmdafllcidaehjejjhpfkmanmka
 
 Postman
 https://chrome.google.com/webstore/detail/fhbjgbiflinjbdggehcddcbncdddomop
+
+Disable HTML5 Autoplay
+https://chrome.google.com/webstore/detail/efdhoaajjjgckpbkoglidkeendpkolai
