@@ -6,7 +6,7 @@ curl -L https://raw.githubusercontent.com/andrewtchin/ansible-common/master/osx-
 echo "Install devel Ansible"
 sudo easy_install pip
 sudo pip install paramiko PyYAML Jinja2 httplib2 six
-git clone git://github.com/ansible/ansible.git --recursive
+git clone https://github.com/ansible/ansible.git --recursive
 source ansible/hacking/env-setup
 
 echo "Clone ansible-common"
