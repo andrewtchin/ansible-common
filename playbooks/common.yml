@@ -8,4 +8,4 @@
 
   roles:
     - python-packages
-    - vim
+    - vim-colors
