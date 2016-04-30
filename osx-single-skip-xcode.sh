@@ -9,23 +9,12 @@ sudo pip install paramiko PyYAML Jinja2 httplib2 six
 git clone https://github.com/ansible/ansible.git --recursive
 source ansible/hacking/env-setup
 
-echo "Clone ansible-common"
-ANSIBLE_COMMON_DIR="$HOME/ansible-common"
-if [ -d "$ANSIBLE_COMMON_DIR" ]; then
-  rm -rf $ANSIBLE_COMMON_DIR
-fi
-git clone https://github.com/andrewtchin/ansible-common.git $ANSIBLE_COMMON_DIR
-
 echo "Clone ansible-osx"
 ANSIBLE_OSX_DIR="$HOME/ansible-osx"
 if [ -d "$ANSIBLE_OSX_DIR" ]; then
   rm -rf $ANSIBLE_OSX_DIR
 fi
 git clone https://github.com/andrewtchin/ansible-osx.git $ANSIBLE_OSX_DIR
-
-cd $ANSIBLE_COMMON_DIR
-echo "Run ansible-common"
-ansible-playbook -vvv playbooks/common.yml --ask-become-pass -c local
 
 cd $ANSIBLE_OSX_DIR
 echo "Run ansible-osx"

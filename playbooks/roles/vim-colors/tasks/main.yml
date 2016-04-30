@@ -1,5 +1,0 @@
-- name: Create vim colors dir
-  file: path="~/.vim/colors" state=directory
-
-- name: Install vim solarized colors
-  copy: src=solarized.vim dest="~/.vim/colors/solarized.vim" mode=0644
