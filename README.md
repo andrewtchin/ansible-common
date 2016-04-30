@@ -1,10 +1,10 @@
 # ansible-common
 
-Installs python packages.
+Scripts to run Ansible on OSX or Ubuntu
 
 ## Single touch install
 
-Runs bootstrap, common, and OS specific playbooks. Installs dotfiles.
+Runs bootstrap and OS specific playbooks. Installs dotfiles.
 
 WARNING: This installs an authorized_keys file from dotfiles. Replace dotfiles with your own.
 
@@ -12,16 +12,12 @@ WARNING: This installs an authorized_keys file from dotfiles. Replace dotfiles w
 
 ##### Desktop
 
-Verified on Ubuntu Desktop 14.04.3 and Ubuntu Desktop 15.10 (2016-01-02)
-Verified on Ubuntu Desktop 16.04 (2016-04-26)
 ```
 curl -L https://raw.githubusercontent.com/andrewtchin/ansible-common/master/ubuntu-desktop.sh | bash
 ```
 
 ##### Server
 
-Verified on Ubuntu Server 14.04.3 and Ubuntu Server 15.10 (2016-01-02)
-Verified on Ubuntu Server 16.04 (2016-04-26)
 ```
 curl -L https://raw.githubusercontent.com/andrewtchin/ansible-common/master/ubuntu-server.sh | bash
 ```
@@ -56,13 +52,6 @@ curl -L https://raw.githubusercontent.com/andrewtchin/ansible-common/master/ubun
 
 ```
 curl -L https://raw.githubusercontent.com/andrewtchin/ansible-common/master/osx-bootstrap.sh | sh
-```
-
-### Run playbook
-
-```
-git clone https://github.com/andrewtchin/ansible-common.git
-ansible-playbook -vvv playbooks/common.yml --ask-sudo-pass -i inventory
 ```
 
 ### OS Specific Customizations
