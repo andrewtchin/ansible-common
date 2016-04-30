@@ -8,13 +8,5 @@ echo "Install Ansible dependencies"
 sudo apt-get install -y python-pip
 sudo pip install markupsafe pyyaml jinja2
 
-# Removed in favor of using devel
-# echo "Installing Ansible."
-# sudo pip install ansible markupsafe
-
-# Workaround for https://github.com/ansible/ansible/issues/13867
-# echo "Uninstall python-cryptography"
-# sudo apt-get remove -y python-cryptography
-
 echo "Installing git."
 sudo apt-get install -y git
