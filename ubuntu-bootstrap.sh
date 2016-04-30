@@ -6,7 +6,7 @@ sudo apt-get install -y python-dev
 
 echo "Install Ansible dependencies"
 sudo apt-get install -y python-pip
-sudo pip install markupsafe pyyaml
+sudo pip install markupsafe pyyaml jinja2
 
 # Removed in favor of using devel
 # echo "Installing Ansible."
