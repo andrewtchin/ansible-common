@@ -23,6 +23,11 @@ cd $ANSIBLE_UBUNTU_DIR
 echo "Run ansible-ubuntu"
 ansible-playbook -vvv playbooks/ubuntu-desktop.yml --ask-sudo-pass -c local --extra-vars=@vars/ubuntu.json
 
+if [ -n "$1" ]; then
+  echo "Running additional playbook"
+  ansible-playbook -vvv playbooks/$1.yml --ask-sudo-pass -c local --extra-vars=@vars/ubuntu.json
+fi
+
 echo "Install dotfiles"
 DOTFILES_DIR="$HOME/.dotfiles"
 if [ -d "$DOTFILES_DIR"  ]; then
