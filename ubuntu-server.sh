@@ -7,7 +7,7 @@ echo "Bootstrap"
 curl -L https://raw.githubusercontent.com/andrewtchin/ansible-common/master/ubuntu-bootstrap.sh | sh
 
 echo "Install devel Ansible"
-sudo apt-get install -y python-pip
+sudo apt-get install -y python-pip python-cffi
 sudo pip install paramiko PyYAML Jinja2 httplib2 six
 git clone https://github.com/ansible/ansible.git --recursive
 source ./ansible/hacking/env-setup
