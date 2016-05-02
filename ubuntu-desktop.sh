@@ -8,7 +8,7 @@ curl -L https://raw.githubusercontent.com/andrewtchin/ansible-common/master/ubun
 
 echo "Install devel Ansible"
 sudo apt-get install -y python-pip
-sudo pip install paramiko PyYAML Jinja2 httplib2 six
+sudo -H pip install paramiko PyYAML Jinja2 httplib2 six
 git clone https://github.com/ansible/ansible.git --recursive
 source ./ansible/hacking/env-setup
 
