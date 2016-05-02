@@ -12,6 +12,8 @@ WARNING: This installs an authorized_keys file from dotfiles and starts sshd. Re
 
 ##### Desktop
 
+Tested with Ubuntu Desktop 16.04
+
 ```
 curl -L https://raw.githubusercontent.com/andrewtchin/ansible-common/master/ubuntu-desktop.sh | bash
 ```
@@ -23,6 +25,8 @@ curl -L https://raw.githubusercontent.com/andrewtchin/ansible-common/master/ubun
 
 
 ##### Server
+
+Tested with Ubuntu Server 16.04
 
 ```
 curl -L https://raw.githubusercontent.com/andrewtchin/ansible-common/master/ubuntu-server.sh | bash
