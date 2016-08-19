@@ -7,7 +7,7 @@ Scripts to run Ansible on OSX or Ubuntu
 Runs bootstrap and OS specific playbooks.
 
 
-WARNING: This starts sshd, changes shell to zsh, and changes terminal color to solarized.
+**WARNING**: This starts sshd, changes shell to zsh, and changes terminal color to solarized.
 
 ### Ubuntu
 
@@ -21,7 +21,7 @@ curl -L https://raw.githubusercontent.com/andrewtchin/ansible-common/master/ubun
 
 Install dotfiles
 
-WARNING: This installs an authorized_keys file. Replace dotfiles with your own.
+**WARNING**: This installs an authorized_keys file. Replace dotfiles with your own.
 ```
 curl -L https://raw.githubusercontent.com/andrewtchin/ansible-common/master/dotfiles.sh | bash
 ```
