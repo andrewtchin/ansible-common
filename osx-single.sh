@@ -21,18 +21,10 @@ git clone https://github.com/andrewtchin/ansible-osx.git $ANSIBLE_OSX_DIR
 
 cd $ANSIBLE_OSX_DIR
 echo "Run ansible-osx"
-ansible-playbook -vvv playbooks/osx-preinstall.yml --ask-sudo-pass --extra-vars=@vars/osx.yml
-ansible-playbook -vvv playbooks/osx.yml --ask-sudo-pass --extra-vars=@vars/osx.yml
+ansible-playbook -vvv playbooks/osx-preinstall.yml --ask-become-pass --extra-vars=@vars/osx.yml
+ansible-playbook -vvv playbooks/osx.yml --ask-become-pass --extra-vars=@vars/osx.yml
 
 echo "Remove gpg.conf for dotfiles"
 rm -f $HOME/.gnupg/gpg.conf
-
-echo "Install dotfiles"
-DOTFILES_DIR="$HOME/.dotfiles"
-if [ -d "$DOTFILES_DIR" ]; then
-  rm -rf $DOTFILES_DIR
-fi
-git clone https://github.com/andrewtchin/dotfiles.git $DOTFILES_DIR --recursive
-RCRC="$DOTFILES_DIR/rcrc" rcup
 
 echo "Install complete"

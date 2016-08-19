@@ -4,9 +4,7 @@ Scripts to run Ansible on OSX or Ubuntu
 
 ## Single touch install
 
-Runs bootstrap and OS specific playbooks. Installs dotfiles.
-
-WARNING: This installs an authorized_keys file from dotfiles and starts sshd. Replace dotfiles with your own.
+Runs bootstrap and OS specific playbooks.
 
 #### Ubuntu
 
@@ -23,6 +21,12 @@ With developer playbook
 curl -L https://raw.githubusercontent.com/andrewtchin/ansible-common/master/ubuntu-desktop.sh | bash -s developer
 ```
 
+Install dotfiles
+
+WARNING: This installs an authorized_keys file from dotfiles and starts sshd. Replace dotfiles with your own.
+```
+curl -L https://raw.githubusercontent.com/andrewtchin/ansible-common/master/dotfiles.sh | bash
+```
 
 ##### Server
 

@@ -19,19 +19,11 @@ git clone https://github.com/andrewtchin/ansible-ubuntu.git $ANSIBLE_UBUNTU_DIR
 
 cd $ANSIBLE_UBUNTU_DIR
 echo "Run ansible-ubuntu"
-ansible-playbook -vvv playbooks/ubuntu-server.yml --ask-sudo-pass -c local --extra-vars=@vars/ubuntu.json
+ansible-playbook -vvv playbooks/ubuntu-server.yml --ask-become-pass -c local --extra-vars=@vars/ubuntu.json
 
 if [ -n "$1" ]; then
   echo "Running additional playbook"
-  ansible-playbook -vvv playbooks/$1.yml --ask-sudo-pass -c local --extra-vars=@vars/ubuntu.json
+  ansible-playbook -vvv playbooks/$1.yml --ask-become-pass -c local --extra-vars=@vars/ubuntu.json
 fi
-
-echo "Install dotfiles"
-DOTFILES_DIR="$HOME/.dotfiles"
-if [ -d "$DOTFILES_DIR"  ]; then
-      rm -rf $DOTFILES_DIR
-fi
-git clone https://github.com/andrewtchin/dotfiles.git $DOTFILES_DIR --recursive
-RCRC="$HOME/.dotfiles/rcrc" rcup
 
 echo "Install complete"
