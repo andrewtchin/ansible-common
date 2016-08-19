@@ -6,21 +6,17 @@ Scripts to run Ansible on OSX or Ubuntu
 
 Runs bootstrap and OS specific playbooks.
 
-WARNING This starts sshd.
 
-#### Ubuntu
+WARNING: This starts sshd, changes shell to zsh, and changes terminal color to solarized.
 
-##### Desktop
+### Ubuntu
+
+#### Desktop
 
 Tested with Ubuntu Desktop 16.04
 
 ```
 curl -L https://raw.githubusercontent.com/andrewtchin/ansible-common/master/ubuntu-desktop.sh | bash
-```
-
-With developer playbook
-```
-curl -L https://raw.githubusercontent.com/andrewtchin/ansible-common/master/ubuntu-desktop.sh | bash -s developer
 ```
 
 Install dotfiles
@@ -30,7 +26,7 @@ WARNING: This installs an authorized_keys file. Replace dotfiles with your own.
 curl -L https://raw.githubusercontent.com/andrewtchin/ansible-common/master/dotfiles.sh | bash
 ```
 
-##### Server
+#### Server
 
 Tested with Ubuntu Server 16.04
 
@@ -38,14 +34,14 @@ Tested with Ubuntu Server 16.04
 curl -L https://raw.githubusercontent.com/andrewtchin/ansible-common/master/ubuntu-server.sh | bash
 ```
 
-##### VMware VIC development
+#### VMware VIC development
 
 ```
 curl -L https://raw.githubusercontent.com/andrewtchin/ansible-common/master/ubuntu-vmware.sh | bash
 git clone git@github.com:andrewtchin/vic.git ~/go/src/github.com/vmware/vic
 ```
 
-#### OS X
+### OS X
 
 ```
 curl -L https://raw.githubusercontent.com/andrewtchin/ansible-common/master/osx-single.sh | sh
