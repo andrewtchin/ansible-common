@@ -54,7 +54,7 @@ curl -L https://raw.githubusercontent.com/andrewtchin/ansible-common/master/osx-
 
 Then set OS X defaults:
 ```
-cd ~/ansible-osx; ansible-playbook -vvv playbooks/osx-defaults.yml --ask-sudo-pass --extra-vars=@vars/osx.yml
+cd ~/ansible-osx; ansible-playbook -vvv playbooks/osx-defaults.yml --ask-become-pass --extra-vars=@vars/osx.yml
 ```
 
 ## Normal install
