@@ -1,8 +1,5 @@
 cd $HOME
 
-echo "Update package indexes"
-sudo apt-get update
-
 echo "Bootstrap"
 curl -L https://raw.githubusercontent.com/andrewtchin/ansible-common/master/ubuntu-bootstrap.sh | sh
 
