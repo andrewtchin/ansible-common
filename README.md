@@ -39,6 +39,7 @@ curl -L https://raw.githubusercontent.com/andrewtchin/ansible-common/master/ubun
 ```
 curl -L https://raw.githubusercontent.com/andrewtchin/ansible-common/master/ubuntu-vmware.sh | bash
 git clone git@github.com:andrewtchin/vic.git ~/go/src/github.com/vmware/vic
+git clone git@github.com:vmware/govmomi.git ~/go/src/github.com/vmware/govmomi
 ```
 
 ### OS X
