@@ -7,7 +7,6 @@ Scripts to run Ansible on OSX or Ubuntu
 
 Runs bootstrap and OS specific playbooks.
 
----
 
 ### Ubuntu
 
@@ -20,6 +19,7 @@ Tested with Ubuntu Desktop 16.04
 ```
 curl -L https://raw.githubusercontent.com/andrewtchin/ansible-common/master/ubuntu-desktop.sh | bash
 ```
+---
 
 #### Server
 
@@ -30,6 +30,7 @@ Tested with Ubuntu Server 16.04
 ```
 curl -L https://raw.githubusercontent.com/andrewtchin/ansible-common/master/ubuntu-server.sh | bash
 ```
+---
 
 #### VMware VIC development
 
@@ -51,6 +52,7 @@ Install dotfiles from repo or install plain zshrc from this repo
 ```
 curl -Lo ~/.zshrc https://raw.githubusercontent.com/andrewtchin/ansible-common/master/zshrc
 ```
+---
 
 #### Install dotfiles
 
@@ -59,7 +61,6 @@ curl -Lo ~/.zshrc https://raw.githubusercontent.com/andrewtchin/ansible-common/m
 curl -L https://raw.githubusercontent.com/andrewtchin/ansible-common/master/dotfiles.sh | bash
 ```
 
----
 
 ### OS X
 
@@ -83,7 +84,6 @@ Install dotfiles:
 curl -L https://raw.githubusercontent.com/andrewtchin/ansible-common/master/dotfiles.sh | bash
 ```
 
----
 
 ## Normal install
 
