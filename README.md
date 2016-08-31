@@ -7,6 +7,7 @@ Scripts to run Ansible on OSX or Ubuntu
 
 Runs bootstrap and OS specific playbooks.
 
+---
 
 ### Ubuntu
 
@@ -32,20 +33,20 @@ curl -L https://raw.githubusercontent.com/andrewtchin/ansible-common/master/ubun
 
 #### VMware VIC development
 
-1. Installs vim, emacs, development tools, docker, go, govc
+Installs vim, emacs, development tools, docker, go, govc
 
 ```
 curl -L https://raw.githubusercontent.com/andrewtchin/ansible-common/master/ubuntu-vmware.sh | bash
 ```
 
-2. Clone development repos (replace with own VIC fork)
+Clone development repos (replace with own VIC fork)
 
 ```
 git clone git@github.com:andrewtchin/vic.git ~/go/src/github.com/vmware/vic
 git clone git@github.com:vmware/govmomi.git ~/go/src/github.com/vmware/govmomi
 ```
 
-3. Install dotfiles from repo or install plain zshrc from this repo
+Install dotfiles from repo or install plain zshrc from this repo
 
 ```
 curl -Lo ~/.zshrc https://raw.githubusercontent.com/andrewtchin/ansible-common/master/zshrc
@@ -58,6 +59,7 @@ curl -Lo ~/.zshrc https://raw.githubusercontent.com/andrewtchin/ansible-common/m
 curl -L https://raw.githubusercontent.com/andrewtchin/ansible-common/master/dotfiles.sh | bash
 ```
 
+---
 
 ### OS X
 
@@ -81,6 +83,7 @@ Install dotfiles:
 curl -L https://raw.githubusercontent.com/andrewtchin/ansible-common/master/dotfiles.sh | bash
 ```
 
+---
 
 ## Normal install
 
