@@ -19,7 +19,6 @@ Tested with Ubuntu Desktop 16.04
 ```
 curl -L https://raw.githubusercontent.com/andrewtchin/ansible-common/master/ubuntu-desktop.sh | bash
 ```
----
 
 #### Server
 
@@ -30,29 +29,6 @@ Tested with Ubuntu Server 16.04
 ```
 curl -L https://raw.githubusercontent.com/andrewtchin/ansible-common/master/ubuntu-server.sh | bash
 ```
----
-
-#### VMware VIC development
-
-Installs vim, emacs, development tools, docker, go, govc
-
-```
-curl -L https://raw.githubusercontent.com/andrewtchin/ansible-common/master/ubuntu-vmware.sh | bash
-```
-
-Clone development repos (replace with own VIC fork)
-
-```
-git clone git@github.com:andrewtchin/vic.git ~/go/src/github.com/vmware/vic
-git clone git@github.com:vmware/govmomi.git ~/go/src/github.com/vmware/govmomi
-```
-
-Install dotfiles from repo or install plain zshrc from this repo
-
-```
-curl -Lo ~/.zshrc https://raw.githubusercontent.com/andrewtchin/ansible-common/master/zshrc
-```
----
 
 #### Install dotfiles
 
@@ -106,3 +82,26 @@ curl -L https://raw.githubusercontent.com/andrewtchin/ansible-common/master/osx-
 Run OS specific playbook.
 * https://github.com/andrewtchin/ansible-ubuntu
 * https://github.com/andrewtchin/ansible-osx
+
+
+
+## VMware VIC development
+
+1. Installs vim, emacs, development tools, docker, go, govc
+
+   ```shell
+   curl -L https://raw.githubusercontent.com/andrewtchin/ansible-common/master/ubuntu-vmware.sh | bash
+   ```
+
+2. Clone development repos (replace with own VIC fork)  
+
+   ```shell
+   git clone git@github.com:andrewtchin/vic.git ~/go/src/github.com/vmware/vic
+   git clone git@github.com:vmware/govmomi.git ~/go/src/github.com/vmware/govmomi
+   ```
+
+3. Install dotfiles from repo or install plain zshrc from this repo
+
+   ```shell
+   curl -Lo ~/.zshrc https://raw.githubusercontent.com/andrewtchin/ansible-common/master/zshrc
+   ```
