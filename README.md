@@ -95,7 +95,6 @@ Run OS specific playbook.
 
 2. Install your dotfiles or install this plain zshrc from this repo
 
-   ZSH
    ```shell
    curl -Lo ~/.zshrc https://raw.githubusercontent.com/andrewtchin/ansible-common/master/zshrc
    ```
