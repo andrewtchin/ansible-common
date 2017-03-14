@@ -116,5 +116,5 @@ Run OS specific playbook.
 5. Clone development repos (prompts for your Github username to get your VIC fork)
 
    ```shell
-   curl -L https://raw.githubusercontent.com/andrewtchin/ansible-common/master/vmware-repos.sh | bash
+   bash <(curl -L https://raw.githubusercontent.com/andrewtchin/ansible-common/master/vmware-repos.sh)
    ```
