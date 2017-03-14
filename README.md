@@ -87,21 +87,35 @@ Run OS specific playbook.
 
 ## VMware VIC development
 
-1. Installs vim, emacs, development tools, docker, docker-compose, go, govc
+1. Installs vim, emacs, development tools, docker, docker-compose, go, govc, changes shell to ZSH
 
    ```shell
    curl -L https://raw.githubusercontent.com/andrewtchin/ansible-common/master/ubuntu-vmware.sh | bash
    ```
 
-2. Clone development repos (replace with own VIC fork)  
+2. Install your dotfiles or install this plain zshrc from this repo
 
-   ```shell
-   git clone git@github.com:andrewtchin/vic.git ~/go/src/github.com/vmware/vic
-   git clone git@github.com:vmware/govmomi.git ~/go/src/github.com/vmware/govmomi
-   ```
-
-3. Install dotfiles from repo or install plain zshrc from this repo
-
+   ZSH
    ```shell
    curl -Lo ~/.zshrc https://raw.githubusercontent.com/andrewtchin/ansible-common/master/zshrc
+   ```
+
+3. Log out and log back in
+
+   ```shell
+   gnome-session-quit --no-prompt
+   ```
+
+4. Make sure you have forked the [VIC repo](https://github.com/vmware/vic) on Github
+
+5. Add your Github SSH key to clone repos
+
+   ```shell
+   ssh-add ~/.ssh/id_rsa
+   ```
+
+5. Clone development repos (prompts for your Github username to get your VIC fork)
+
+   ```shell
+   curl -L https://raw.githubusercontent.com/andrewtchin/ansible-common/master/vmware-repos.sh | bash
    ```
