@@ -18,16 +18,26 @@ alias ll='ls -alhF'
 alias l='ls -alhF'
 
 # antigen
-source ~/.antigen/antigen.zsh
-antigen use oh-my-zsh
-antigen bundles <<EOBUNDLES
-    zsh-users/zsh-syntax-highlighting
-    zsh-users/zsh-history-substring-search
-    zsh-users/zsh-completions
+use_antigen=false
+if [[ -a ~/.antigen/antigen.zsh ]]; then
+  source ~/.antigen/antigen.zsh
+  use_antigen=true
+elif [[ -a /usr/share/zsh-antigen/antigen.zsh ]]; then
+  source /usr/share/zsh-antigen/antigen.zsh
+  use_antigen=true
+fi
 
-    docker
-    golang
-    gitfast
-EOBUNDLES
-antigen theme pygmalion
-antigen apply
+if [[ $use_antigen ]]; then
+  antigen use oh-my-zsh
+  antigen bundles <<EOBUNDLES
+      zsh-users/zsh-syntax-highlighting
+      zsh-users/zsh-history-substring-search
+      zsh-users/zsh-completions
+
+      docker
+      golang
+      gitfast
+  EOBUNDLES
+  antigen theme pygmalion
+  antigen apply
+fi
