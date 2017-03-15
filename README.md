@@ -87,7 +87,8 @@ Run OS specific playbook.
 
 ## VMware VIC development
 
-1. Installs vim, emacs, development tools, docker, docker-compose, go, govc, changes shell to ZSH
+1. Installs vim, emacs, development tools, docker, docker-compose, go, govc, robot framework,
+   delve, asciinema, changes shell to ZSH
 
    ```shell
    curl -L https://raw.githubusercontent.com/andrewtchin/ansible-common/master/ubuntu-vmware.sh | bash
