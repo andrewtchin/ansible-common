@@ -29,15 +29,14 @@ fi
 
 if [[ $use_antigen ]]; then
   antigen use oh-my-zsh
-  antigen bundles <<EOBUNDLES
-      zsh-users/zsh-syntax-highlighting
-      zsh-users/zsh-history-substring-search
-      zsh-users/zsh-completions
 
-      docker
-      golang
-      gitfast
-  EOBUNDLES
+  antigen bundle zsh-users/zsh-syntax-highlighting
+  antigen bundle zsh-users/zsh-history-substring-search
+  antigen bundle zsh-users/zsh-completions
+  antigen bundle docker
+  antigen bundle golang
+  antigen bundle gitfast
+
   antigen theme pygmalion
   antigen apply
 fi
