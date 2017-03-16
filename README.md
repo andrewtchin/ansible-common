@@ -88,7 +88,10 @@ Run OS specific playbook.
 ## VMware VIC development
 
 1. Installs vim, emacs, development tools, docker, docker-compose, go, govc, robot framework,
-   delve, asciinema, changes shell to ZSH
+   delve, packer, asciinema, changes shell to ZSH
+
+   NOTE: Default Docker client is pinned to 1.13 in `/usr/local/bin`. Latest Docker is installed in
+   `/usr/bin`
 
    ```shell
    curl -L https://raw.githubusercontent.com/andrewtchin/ansible-common/master/ubuntu-vmware.sh | bash
