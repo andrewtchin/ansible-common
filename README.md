@@ -3,6 +3,8 @@
 Scripts to run Ansible on OSX or Ubuntu
 
 
+-----
+
 ## Single touch install
 
 Runs bootstrap and OS specific playbooks.
@@ -61,6 +63,8 @@ curl -L https://raw.githubusercontent.com/andrewtchin/ansible-common/master/dotf
 ```
 
 
+-----
+
 ## Normal install
 
 ### Bootstrap
@@ -84,6 +88,7 @@ Run OS specific playbook.
 * https://github.com/andrewtchin/ansible-osx
 
 
+-----
 
 ## VMware VIC development
 
