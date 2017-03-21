@@ -92,7 +92,7 @@ Run OS specific playbook.
 
 ## VMware VIC development
 
-1. Installs vim, emacs, development tools, docker, docker-compose, go, govc, robot framework,
+1. Installs vim, emacs, development tools, docker, docker-compose, go, govc, drone cli, robot framework,
    delve, packer, asciinema, changes shell to ZSH
 
    NOTE: Default Docker client is pinned to 1.13 in `/usr/local/bin`. Latest Docker is installed in
