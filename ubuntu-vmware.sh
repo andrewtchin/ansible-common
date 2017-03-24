@@ -24,4 +24,4 @@ ansible-playbook -vvv playbooks/ubuntu-desktop.yml --ask-become-pass -c local --
 echo "Run work-vmware"
 ansible-playbook -vvv playbooks/work-vmware.yml --ask-become-pass -c local --extra-vars=@vars/ubuntu.json -i inventory
 
-echo "Install complete"
+echo "Install script exiting"
