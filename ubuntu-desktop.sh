@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
+addl=${1:-}
+
 cd $HOME
 
 echo "Bootstrap"
@@ -21,9 +23,9 @@ cd $ANSIBLE_UBUNTU_DIR
 echo "Run ansible-ubuntu"
 ansible-playbook -vvv playbooks/ubuntu-desktop.yml --ask-become-pass -c local --extra-vars=@vars/ubuntu.json -i inventory
 
-if [ -n "$1" ]; then
+if [ -n "$addl" ]; then
   echo "Running additional playbook"
-  ansible-playbook -vvv playbooks/$1.yml --ask-become-pass -c local --extra-vars=@vars/ubuntu.json -i inventory
+  ansible-playbook -vvv playbooks/$addl.yml --ask-become-pass -c local --extra-vars=@vars/ubuntu.json -i inventory
 fi
 
 echo "Install script exiting"
