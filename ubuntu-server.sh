@@ -1,3 +1,6 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
 cd $HOME
 
 echo "Bootstrap"
@@ -16,11 +19,11 @@ git clone https://github.com/andrewtchin/ansible-ubuntu.git $ANSIBLE_UBUNTU_DIR
 
 cd $ANSIBLE_UBUNTU_DIR
 echo "Run ansible-ubuntu"
-ansible-playbook -vvv playbooks/ubuntu-server.yml --ask-become-pass -c local --extra-vars=@vars/ubuntu.json
+ansible-playbook -vvv playbooks/ubuntu-server.yml --ask-become-pass -c local --extra-vars=@vars/ubuntu.json -i inventory
 
 if [ -n "$1" ]; then
   echo "Running additional playbook"
-  ansible-playbook -vvv playbooks/$1.yml --ask-become-pass -c local --extra-vars=@vars/ubuntu.json
+  ansible-playbook -vvv playbooks/$1.yml --ask-become-pass -c local --extra-vars=@vars/ubuntu.json -i inventory
 fi
 
-echo "Install complete"
+echo "Install script exiting"

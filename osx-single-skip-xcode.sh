@@ -1,3 +1,6 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
 cd $HOME
 
 echo "Bootstrap"
@@ -24,4 +27,4 @@ ansible-playbook -vvv playbooks/osx.yml --ask-become-pass --extra-vars=@vars/osx
 echo "Remove gpg.conf for dotfiles"
 rm -f $HOME/.gnupg/gpg.conf
 
-echo "Install complete"
+echo "Installer exiting"

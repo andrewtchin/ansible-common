@@ -1,3 +1,6 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
 cd $HOME
 
 echo "Install Xcode"
@@ -21,10 +24,10 @@ git clone https://github.com/andrewtchin/ansible-osx.git $ANSIBLE_OSX_DIR
 
 cd $ANSIBLE_OSX_DIR
 echo "Run ansible-osx"
-ansible-playbook -vvv playbooks/osx-preinstall.yml --ask-become-pass --extra-vars=@vars/osx.yml
-ansible-playbook -vvv playbooks/osx.yml --ask-become-pass --extra-vars=@vars/osx.yml
+ansible-playbook -vvv playbooks/osx-preinstall.yml --ask-become-pass --extra-vars=@vars/osx.yml -i inventory
+ansible-playbook -vvv playbooks/osx.yml --ask-become-pass --extra-vars=@vars/osx.yml -i inventory
 
 echo "Remove gpg.conf for dotfiles"
 rm -f $HOME/.gnupg/gpg.conf
 
-echo "Install complete"
+echo "Installer exiting"
