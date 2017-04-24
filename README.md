@@ -127,3 +127,5 @@ Run OS specific playbook.
    ```shell
    bash <(curl -L https://raw.githubusercontent.com/andrewtchin/ansible-common/master/vmware-repos.sh)
    ```
+
+6. Install `ovftool` if desired. https://www.vmware.com/support/developer/ovf/
