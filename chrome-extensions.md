@@ -30,3 +30,9 @@ https://chrome.google.com/webstore/detail/fhbjgbiflinjbdggehcddcbncdddomop
 
 Disable HTML5 Autoplay
 https://chrome.google.com/webstore/detail/efdhoaajjjgckpbkoglidkeendpkolai
+
+Zenhub
+https://chrome.google.com/webstore/detail/ogcgkffhplmphkaahpmffcafajaocjbd
+
+Wide Github
+https://chrome.google.com/webstore/detail/kaalofacklcidaampbokdplbklpeldpj
