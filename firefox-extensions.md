@@ -11,7 +11,7 @@ uBlock Origin
 https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/
 
 Privacy Badger
-https://addons.mozilla.org/en-US/firefox/addon/privacy-badger-firefox/
+https://addons.mozilla.org/en-US/firefox/addon/privacy-badger17/
 
 Random Agent Spoofer
 https://addons.mozilla.org/en-US/firefox/addon/random-agent-spoofer/
