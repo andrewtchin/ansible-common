@@ -104,7 +104,9 @@ Run the following commands:
    delve, packer, asciinema, Google Cloud SDK, cfssl, changes shell to ZSH
 
    NOTE: Default Docker client is pinned to 1.13 in `/usr/local/bin`. Latest Docker is installed in
-   `/usr/bin` ```shell
+   `/usr/bin` 
+   
+   ```shell
    curl -L https://raw.githubusercontent.com/andrewtchin/ansible-common/master/ubuntu-vmware.sh | bash
    ```
 
