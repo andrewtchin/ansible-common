@@ -92,13 +92,19 @@ Run OS specific playbook.
 
 ## VMware VIC development
 
+### Prepare
+
+Create an Ubuntu VM. Recommended minimum sizing is 2 vCPU and 4 GB RAM.
+
+### Run
+
+Run the following commands:
+
 1. Installs vim, emacs, development tools, docker, docker-compose, go, govc, drone cli, robot framework,
    delve, packer, asciinema, Google Cloud SDK, cfssl, changes shell to ZSH
 
    NOTE: Default Docker client is pinned to 1.13 in `/usr/local/bin`. Latest Docker is installed in
-   `/usr/bin`
-
-   ```shell
+   `/usr/bin` ```shell
    curl -L https://raw.githubusercontent.com/andrewtchin/ansible-common/master/ubuntu-vmware.sh | bash
    ```
 
@@ -114,7 +120,8 @@ Run OS specific playbook.
    gnome-session-quit --no-prompt
    ```
 
-4. Make sure you have forked the [VIC repo](https://github.com/vmware/vic) on Github
+4. Make sure you have forked the [VIC repo](https://github.com/vmware/vic) on Github and added a SSH
+   key to your Github account
 
 5. Add your Github SSH key to clone repos
 
@@ -128,4 +135,4 @@ Run OS specific playbook.
    bash <(curl -L https://raw.githubusercontent.com/andrewtchin/ansible-common/master/vmware-repos.sh)
    ```
 
-6. Install `ovftool` if desired. https://www.vmware.com/support/developer/ovf/
+6. Optional: Install `ovftool` if desired. https://www.vmware.com/support/developer/ovf/
