@@ -36,3 +36,6 @@ https://chrome.google.com/webstore/detail/ogcgkffhplmphkaahpmffcafajaocjbd
 
 Wide Github
 https://chrome.google.com/webstore/detail/kaalofacklcidaampbokdplbklpeldpj
+
+Sourcegraph
+https://chrome.google.com/webstore/detail/dgjhfomjieaadpoljlnidmbgkdffpack
