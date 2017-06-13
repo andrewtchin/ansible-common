@@ -138,3 +138,8 @@ Run the following commands:
    ```
 
 6. Optional: Install `ovftool` if desired. https://www.vmware.com/support/developer/ovf/
+
+   ```shell
+   chmod +x VMware-ovftool-4.2.0-4586971-lin.x86_64.bundle
+   sudo ./VMware-ovftool-4.2.0-4586971-lin.x86_64.bundle 
+   ```
