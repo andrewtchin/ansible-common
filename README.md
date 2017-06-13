@@ -94,7 +94,7 @@ Run OS specific playbook.
 
 ### Prepare
 
-Create an Ubuntu VM. Recommended minimum sizing is 2 vCPU and 4 GB RAM.
+Create an Ubuntu VM. Recommended minimum sizing is 2 vCPU and 4 GB RAM and 80 GB storage.
 
 ### Run
 
