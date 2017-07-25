@@ -103,8 +103,8 @@ Run the following commands:
 1. Installs vim, emacs, development tools, docker, docker-compose, go, govc, drone cli, robot framework,
    delve, packer, asciinema, Google Cloud SDK, cfssl, changes shell to ZSH
 
-   NOTE: Default Docker client is pinned to 1.13 in `/usr/local/bin`. Latest Docker is installed in
-   `/usr/bin` 
+   NOTE: Docker 1.13 client is at `/usr/local/bin/docker/docker`. Latest Docker is installed in
+   `/usr/bin`. You may alias the pinned Docker client if you use that more frequently.
    
    ```shell
    curl -L https://raw.githubusercontent.com/andrewtchin/ansible-common/master/ubuntu-vmware.sh | bash
