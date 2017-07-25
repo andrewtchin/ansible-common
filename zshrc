@@ -12,6 +12,7 @@ fi
 [[ -n "$GOPATH" ]] && export PATH=$PATH:/usr/local/go/bin:$GOPATH/bin
 
 alias vic='cd ~/go/src/github.com/vmware/vic'
+alias product='cd ~/go/src/github.com/vmware/vic-product'
 
 alias la='ls -A'
 alias ll='ls -alhF'
