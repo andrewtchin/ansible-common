@@ -101,7 +101,7 @@ Create an Ubuntu VM. Recommended minimum sizing is 2 vCPU and 4 GB RAM and 80 GB
 Run the following commands:
 
 1. Installs vim, emacs, development tools, docker, docker-compose, go, govc, drone cli, robot framework,
-   delve, packer, asciinema, Google Cloud SDK, cfssl, changes shell to ZSH
+   delve, packer, asciinema, Google Cloud SDK, cfssl, ShellCheck, changes shell to ZSH
 
    NOTE: Docker 1.13 client is at `/usr/local/bin/docker/docker`. Latest Docker is installed in
    `/usr/bin`. You may alias the pinned Docker client if you use that more frequently.
