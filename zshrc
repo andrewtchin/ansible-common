@@ -41,3 +41,8 @@ if [[ $use_antigen ]]; then
   antigen theme pygmalion
   antigen apply
 fi
+
+# docker version manager
+if [[ -f ~/.dvm/dvm.sh ]]; then
+  source ~/.dvm/dvm.sh
+fi
