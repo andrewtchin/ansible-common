@@ -22,6 +22,12 @@ Tested with Ubuntu Desktop 16.04
 curl -L https://raw.githubusercontent.com/andrewtchin/ansible-common/master/ubuntu-desktop.sh | bash
 ```
 
+##### Desktop/Developer
+
+```
+curl -L https://raw.githubusercontent.com/andrewtchin/ansible-common/master/ubuntu-developer.sh | bash
+```
+
 #### Server
 
 **WARNING**: This starts sshd, changes shell to zsh, and changes terminal color to solarized.
