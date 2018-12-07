@@ -28,6 +28,12 @@ curl -L https://raw.githubusercontent.com/andrewtchin/ansible-common/master/ubun
 curl -L https://raw.githubusercontent.com/andrewtchin/ansible-common/master/ubuntu-developer.sh | bash
 ```
 
+##### Browsing
+
+```
+curl -L https://raw.githubusercontent.com/andrewtchin/ansible-common/master/ubuntu-browsing.sh | bash
+```
+
 #### Server
 
 **WARNING**: This starts sshd, changes shell to zsh, and changes terminal color to solarized.
