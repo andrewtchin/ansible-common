@@ -41,8 +41,6 @@ Tested with Ubuntu Desktop 18.04
 curl -L https://raw.githubusercontent.com/andrewtchin/ansible-common/master/ubuntu-browsing.sh | bash
 ```
 
------
-
 #### Server
 
 **WARNING**: This starts sshd, changes shell to zsh, and changes terminal color to solarized.
@@ -52,8 +50,6 @@ Tested with Ubuntu Server 16.04
 ```
 curl -L https://raw.githubusercontent.com/andrewtchin/ansible-common/master/ubuntu-server.sh | bash
 ```
-
------
 
 #### Install dotfiles
 
