@@ -9,6 +9,7 @@ Scripts to run Ansible on OSX or Ubuntu
 
 Runs bootstrap and OS specific playbooks.
 
+-----
 
 ### Ubuntu
 
@@ -16,23 +17,31 @@ Runs bootstrap and OS specific playbooks.
 
 **WARNING**: This starts sshd, changes shell to zsh, and changes terminal color to solarized.
 
+##### Desktop role
+
 Tested with Ubuntu Desktop 16.04
 
 ```
 curl -L https://raw.githubusercontent.com/andrewtchin/ansible-common/master/ubuntu-desktop.sh | bash
 ```
 
-##### Desktop/Developer
+##### Developer role
+
+Tested with Ubuntu Desktop 18.04
 
 ```
 curl -L https://raw.githubusercontent.com/andrewtchin/ansible-common/master/ubuntu-developer.sh | bash
 ```
 
-##### Browsing
+##### Browsing role
+
+Tested with Ubuntu Desktop 18.04
 
 ```
 curl -L https://raw.githubusercontent.com/andrewtchin/ansible-common/master/ubuntu-browsing.sh | bash
 ```
+
+-----
 
 #### Server
 
@@ -44,6 +53,8 @@ Tested with Ubuntu Server 16.04
 curl -L https://raw.githubusercontent.com/andrewtchin/ansible-common/master/ubuntu-server.sh | bash
 ```
 
+-----
+
 #### Install dotfiles
 
 **WARNING**: This installs an authorized_keys file. Replace dotfiles with your own.
@@ -51,6 +62,7 @@ curl -L https://raw.githubusercontent.com/andrewtchin/ansible-common/master/ubun
 curl -L https://raw.githubusercontent.com/andrewtchin/ansible-common/master/dotfiles.sh | bash
 ```
 
+-----
 
 ### OS X
 
@@ -73,7 +85,6 @@ Install dotfiles:
 ```
 curl -L https://raw.githubusercontent.com/andrewtchin/ansible-common/master/dotfiles.sh | bash
 ```
-
 
 -----
 
