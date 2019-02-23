@@ -10,8 +10,14 @@ https://addons.mozilla.org/en-US/firefox/addon/multi-account-containers/
 uBlock Origin
 https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/
 
+uMatrix
+https://addons.mozilla.org/en-US/firefox/addon/umatrix/
+
 Privacy Badger
 https://addons.mozilla.org/en-US/firefox/addon/privacy-badger17/
+
+Cookie Auto Delete
+https://addons.mozilla.org/en-US/firefox/addon/cookie-autodelete/
 
 -----
 
