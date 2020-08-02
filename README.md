@@ -91,7 +91,7 @@ curl -L https://raw.githubusercontent.com/andrewtchin/ansible-common/master/dotf
 #### Ubuntu
 
 ```
-curl -L https://raw.githubusercontent.com/andrewtchin/ansible-common/master/ubuntu-bootstrap.sh | sh
+wget -qO- https://raw.githubusercontent.com/andrewtchin/ansible-common/master/ubuntu-bootstrap.sh | bash
 ```
 
 #### OS X
