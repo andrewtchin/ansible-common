@@ -38,7 +38,7 @@ curl -L https://raw.githubusercontent.com/andrewtchin/ansible-common/master/ubun
 Tested with Ubuntu Desktop 18.04
 
 ```
-curl -L https://raw.githubusercontent.com/andrewtchin/ansible-common/master/ubuntu-browsing.sh | bash
+wget -qO- https://raw.githubusercontent.com/andrewtchin/ansible-common/master/ubuntu-browsing.sh | bash
 ```
 
 #### Server

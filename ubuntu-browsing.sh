@@ -4,11 +4,7 @@ set -euo pipefail
 cd "$HOME"
 
 echo "Bootstrap"
-curl -L https://raw.githubusercontent.com/andrewtchin/ansible-common/master/ubuntu-bootstrap.sh | sh
-
-echo "Install devel Ansible"
-git clone https://github.com/ansible/ansible.git --recursive
-source ./ansible/hacking/env-setup
+wget -qO- https://raw.githubusercontent.com/andrewtchin/ansible-common/master/ubuntu-bootstrap.sh | bash
 
 echo "Clone ansible-ubuntu"
 ANSIBLE_UBUNTU_DIR="$HOME/ansible-ubuntu"
