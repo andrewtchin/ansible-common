@@ -1,14 +1,8 @@
-echo "Update package indexes"
+#!/usr/bin/env bash
+
+set -euox pipefail
+
 sudo apt update
-
-echo "Update python"
-sudo apt upgrade -y python
-
-echo "Install Ansible dependencies"
-sudo apt install -y build-essential libssl-dev libffi-dev python-dev
-sudo apt install -y python-pip python-cffi
-sudo pip install paramiko PyYAML Jinja2 httplib2 six
-sudo pip install markupsafe pycrypto
-
-echo "Installing git."
-sudo apt install -y git
+sudo apt upgrade -y python3
+sudo apt install -y python3-pip openssh-server git
+sudo pip3 install ansible

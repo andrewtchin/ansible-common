@@ -108,3 +108,9 @@ Run OS specific playbook.
 
 
 -----
+
+Authorized Key
+
+```
+curl -L https://raw.githubusercontent.com/andrewtchin/ansible-common/master/authorized-key.sh | bash
+```
