@@ -22,7 +22,7 @@ Runs bootstrap and OS specific playbooks.
 Tested with Ubuntu Desktop 16.04
 
 ```
-curl -L https://raw.githubusercontent.com/andrewtchin/ansible-common/master/ubuntu-desktop.sh | bash
+wget -qO- https://raw.githubusercontent.com/andrewtchin/ansible-common/master/ubuntu-desktop.sh | bash
 ```
 
 ##### Developer role
@@ -30,12 +30,12 @@ curl -L https://raw.githubusercontent.com/andrewtchin/ansible-common/master/ubun
 Tested with Ubuntu Desktop 18.04
 
 ```
-curl -L https://raw.githubusercontent.com/andrewtchin/ansible-common/master/ubuntu-developer.sh | bash
+wget -qO- https://raw.githubusercontent.com/andrewtchin/ansible-common/master/ubuntu-developer.sh | bash
 ```
 
 ##### Browsing role
 
-Tested with Ubuntu Desktop 18.04
+Tested with Ubuntu Desktop 20.04
 
 ```
 wget -qO- https://raw.githubusercontent.com/andrewtchin/ansible-common/master/ubuntu-browsing.sh | bash
