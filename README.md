@@ -19,7 +19,7 @@ Runs bootstrap and OS specific playbooks.
 
 ##### Desktop role
 
-Tested with Ubuntu Desktop 16.04
+Tested with Ubuntu Desktop 20.04
 
 ```
 wget -qO- https://raw.githubusercontent.com/andrewtchin/ansible-common/master/ubuntu-desktop.sh | bash
