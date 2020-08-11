@@ -27,7 +27,7 @@ wget -qO- https://raw.githubusercontent.com/andrewtchin/ansible-common/master/ub
 
 ##### Developer role
 
-Tested with Ubuntu Desktop 18.04
+Tested with Ubuntu Desktop 20.04
 
 ```
 wget -qO- https://raw.githubusercontent.com/andrewtchin/ansible-common/master/ubuntu-developer.sh | bash
