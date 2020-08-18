@@ -45,17 +45,17 @@ wget -qO- https://raw.githubusercontent.com/andrewtchin/ansible-common/master/ub
 
 **WARNING**: This starts sshd, changes shell to zsh, and changes terminal color to solarized.
 
-Tested with Ubuntu Server 16.04
+Tested with Ubuntu Server 20.04
 
 ```
-curl -L https://raw.githubusercontent.com/andrewtchin/ansible-common/master/ubuntu-server.sh | bash
+wget -qO- https://raw.githubusercontent.com/andrewtchin/ansible-common/master/ubuntu-server.sh | bash
 ```
 
 #### Install dotfiles
 
 **WARNING**: This installs an authorized_keys file. Replace dotfiles with your own.
 ```
-curl -L https://raw.githubusercontent.com/andrewtchin/ansible-common/master/dotfiles.sh | bash
+wget -qO- https://raw.githubusercontent.com/andrewtchin/ansible-common/master/dotfiles.sh | bash
 ```
 
 -----
@@ -63,12 +63,12 @@ curl -L https://raw.githubusercontent.com/andrewtchin/ansible-common/master/dotf
 ### OS X
 
 ```
-curl -L https://raw.githubusercontent.com/andrewtchin/ansible-common/master/osx-single.sh | sh
+wget -qO- https://raw.githubusercontent.com/andrewtchin/ansible-common/master/osx-single.sh | bash
 ```
 
 Without installing Xcode (Assumes already installed):
 ```
-curl -L https://raw.githubusercontent.com/andrewtchin/ansible-common/master/osx-single-skip-xcode.sh | sh
+wget -qO- https://raw.githubusercontent.com/andrewtchin/ansible-common/master/osx-single-skip-xcode.sh | bash
 ```
 
 Set OS X defaults:
@@ -79,7 +79,7 @@ Install dotfiles:
 
 **WARNING**: This installs an authorized_keys file. Replace dotfiles with your own.
 ```
-curl -L https://raw.githubusercontent.com/andrewtchin/ansible-common/master/dotfiles.sh | bash
+wget -qO- https://raw.githubusercontent.com/andrewtchin/ansible-common/master/dotfiles.sh | bash
 ```
 
 -----
@@ -97,7 +97,7 @@ wget -qO- https://raw.githubusercontent.com/andrewtchin/ansible-common/master/ub
 #### OS X
 
 ```
-curl -L https://raw.githubusercontent.com/andrewtchin/ansible-common/master/osx-bootstrap.sh | sh
+wget -qO- https://raw.githubusercontent.com/andrewtchin/ansible-common/master/osx-bootstrap.sh | bash
 ```
 
 ### OS Specific
@@ -112,5 +112,5 @@ Run OS specific playbook.
 Authorized Key
 
 ```
-curl -L https://raw.githubusercontent.com/andrewtchin/ansible-common/master/authorized-key.sh | bash
+wget -qO- https://raw.githubusercontent.com/andrewtchin/ansible-common/master/authorized-key.sh | bash
 ```

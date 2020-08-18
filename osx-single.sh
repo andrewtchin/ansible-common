@@ -9,12 +9,6 @@ curl -L https://raw.githubusercontent.com/andrewtchin/ansible-common/master/osx-
 echo "Bootstrap"
 curl -L https://raw.githubusercontent.com/andrewtchin/ansible-common/master/osx-bootstrap.sh | sh
 
-echo "Install devel Ansible"
-sudo easy_install pip
-sudo pip install paramiko PyYAML Jinja2 httplib2 six
-git clone https://github.com/ansible/ansible.git --recursive
-source ansible/hacking/env-setup
-
 echo "Clone ansible-osx"
 ANSIBLE_OSX_DIR="$HOME/ansible-osx"
 if [ -d "$ANSIBLE_OSX_DIR" ]; then
